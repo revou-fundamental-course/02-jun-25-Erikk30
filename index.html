@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - School Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>SMK Decul </h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+     <h2 id="welcome-text">Hi, Guest!</h2>
+<label for="name-input">Enter your name: </label>
+<input type="text" id="name-input" placeholder="Your Name" />
+<button onclick="setName()">Submit</button>
+
+    </section>
+
+    
+
+    <section id="message-us">
+      <h3>Message Us</h3>
+      <form id="contact-form" onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Name" /><br />
+        <input type="email" id="email" placeholder="Email" /><br />
+        <input type="tel" id="phone" placeholder="Phone Number" /><br />
+        <textarea id="message" placeholder="Your Message"></textarea><br />
+        <button type="submit">Send</button>
+      </form>
+
+      <div id="form-result"></div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
